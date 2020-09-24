@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.body0, .body0 a{}
+.body1, .body1 a{}
+.body2, .body2 a{}
+.body3, .body3 a{}
+
+
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+#topbar{padding:15px 0;}
+#topbar i{line-height:normal;}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:50px 0;}
+
+#header section{display:table; width:100%; height:100%; margin-bottom:60px;}
+#header section > div{display:table-cell; width:50%; height:100%; vertical-align:middle;}
+#header section > div *{margin:0;text-align:center;}
+#header #logo{font-size:33px;text-align:center;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:180px 0; text-align:center;}
+
+#pageintro article{max-width:70%; margin:0 auto; padding:5%;}
+#pageintro .heading{margin-bottom:30px; font-size:3rem;}
+#pageintro p{font-size:1; line-height:2;}
+#pageintro footer{margin-top:30px;}
+
+
+/* Content 
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:90px 0;}
+.cta{padding:20px 0;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"Times New Roman"; font-size:10px; line-height:10px;}
+
+/* Navigation */
+#mainav{border:solid; border-width:2px 0;}
+#mainav ul{text-transform:uppercase; text-align:center;}
+#mainav ul ul{z-index:9999; position:absolute; width:190px; text-transform:none; text-align:left;}
+#mainav ul ul ul{left:160px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px 0;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#7A7A7A; background-color:#FFFFFF;}
+a{color:#16B1CC;}
+a:active, a:focus{background:transparent;}
+
+#header #logo a{color:inherit;}
+#pageintro article{color:#121212; background-color:rgba(255,255,255,.7);}
+
+.coloured{color:#FFFFFF; background-color:#16B1CC;}
+.coloured .btn, .coloured .btn.inverse:hover{color:#FFFFFF; background-color:#000000; border-color:#000000;}
+
+.body0, .body0 a{color:#FFFFFF; background-color:#16B1CC;}
+.body1{color:#7A7A7A; background-color:#FFFFFF;}
+.body2{color:#7A7A7A; background-color:#FFFFFF;}
+.body3, .body3 a{color:#7A7A7A; background-color:#FFFFFF;}
+.heading, .body2 .heading{color:#121212;}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#16B1CC; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.3);}
+
+
+
+/* Max Wrapper Width 
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
